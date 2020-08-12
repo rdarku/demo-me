@@ -1,92 +1,142 @@
-body {
-  background-color: lightblue;
-  font-family: 'Raleway', sans-serif;
-}
-nav {
-  background-color: grey;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 50px;
-  width: 100vw;
-  z-index: 1;
-}
-nav ul li {
-  float: right;
-  margin-right: 50px;
-  list-style-type: none;
-  text-align: center;
-}
-#brand {
-  float: left;
-}
-.nav-link {
-  color: darkred;
-  text-decoration: none;
-  font-family: 'Acme', sans-serif;
-}
-.nav-link:hover {
-  color: lightblue;
-  font-weight: bold;
-}
-#brand .nav-link {
-  color: lightblue;
-  font-size: 14pt;
-}
-#brand .nav-link:hover {
-  color: darkred;
-}
-h1 {
-  font-size: 60pt;
-  font-family: 'Acme', sans-serif;
-}
-h2 {
-  font-family: 'Acme', sans-serif;
-  color: darkred;
-}
-#home {
-  margin-top: 50px;
-  position: relative;
-  left: -8px;
-  width: 100vw;
-  height: 30vh;
-  padding-top: 3em;
-  background: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80') center 75% no-repeat fixed;
-  background-size: cover;
-}
-.header-tag {
-  text-align: center;
-  color: darkred;
-  text-shadow: 2px 2px 2px black;
-}
-h3.header-tag{
-  margin-top: -30px;
-  font-size: 18pt;
+body{
+  font-family: 'Montserrat','Raleway',sans-serif;
+  margin: 0;
 }
 
-.main {
+#title {
+  
+  background: no-repeat center/cover;
+  /* background-color: cornsilk; */
+  background-image: linear-gradient(to bottom,rgba(92, 92, 88, 0.5),rgba(50, 50, 94, 0.5)), url('https://images.unsplash.com/photo-1455620450554-5e4b98be6926?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1153&q=80');
+  margin:0 0;
+  padding:0;
+}
+
+#navbarSupportedContent{
+  position: absolute;
+  right: 0;
+}
+
+#profile-image {
+  border: solid white 2px;
+  border-radius:5%;
+  display: block;
+  margin: 50px auto;
+  width:400px;
   text-align: center;
 }
 
-#about {
+#header-text {
+  color: #e9e9e9;
+  text-align: center;
+  margin: 100px auto auto;
+}
+
+#header-text h1 {
+  font-family: 'Oswald',sans-serif;
+  font-size: 5rem;
+  margin: 20px;
+}
+
+#header-text h3 {
+  font-family: 'Qwigley',sans-serif;
+  font-size: 3rem;
+  
+}
+
+#tributes {
+  margin: 50px;
+  text-align: center;
+}
+
+#memories {
+  background-color: beige;
+  margin: 50px auto;
+  padding-top: 50px;
+}
+
+#contact {
+  text-align: center;
+  border-bottom: 1px dotted #aaa; 
+  padding-bottom: 60px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.tribute {
+  margin-bottom: 20px;
+}
+
+.bio-content {
+  color: #115;
+  line-height: 1.5rem;
+  padding: 10px;
+  text-align: left;
+}
+
+.bio-author {
+  color: gray;
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+  overflow: visible;
+}
+
+.memory {
+  margin: 50px 0;
+  padding: 0 100px;
+}
+
+.headshot {
   display: inline-block;
-  margin-top: 50px;
+  border-radius: 50%;
 }
 
-#about-picture {
-  width: 30vw;
-  float: left;
+.headshot h3 {
+  display: inline-block;
 }
 
-#profile-pic {
-  height: 300px;
-  width: 300px;
-  object-fit: cover;
-  border-radius: 0.4em;
-  box-shadow: 2px 2px 2px black;
+.section-description {
+  text-align: center;
+  margin-bottom: 20px;;
 }
 
-#about-content {
-  width: 40vw;
-  float: right;
+.divider-1 span { 
+  display: inline-block; 
+  width: 200px; 
+  border-bottom: 1px dotted #aaa; 
+}
+
+.contact-details {
+  margin: 10px auto;
+  text-align: left;
+}
+
+footer {
+  padding: 60px 0;
+  text-align: center;
+  background-color: beige;
+}
+
+.footer-social a { 
+  margin: 0 10px; 
+  color: #bbb; 
+  border: 0; 
+}
+
+.footer-social a:hover, .footer-social a:focus { 
+  color: #856dc0; 
+  border: 0; 
+}
+
+.footer-social i { 
+  font-size: 24px; 
+  vertical-align: middle; 
 }

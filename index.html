@@ -1,36 +1,219 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>First Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In Memorium - Loved, Missed, Remembered</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allerta&family=Lato&family=Montserrat&family=Raleway&family=Oswald&family=Qwigley&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
   <link rel="stylesheet" href="./style.css">
 
-</head>
-<body>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 
-<nav class="navbar">
-  <ul>
-    <li id="brand"><a href="#home" class="nav-link">Me Myself</a></li>
-    <li><a href="#contact" class="nav-link">Contact</a></li>
-    <li><a href="#about" class="nav-link">About</a></li>
-  </ul>
-</nav>
-<header id="home">
-  <h1 class="header-tag">Nice to Meet You!</h1>
-  <h3 class="header-tag">I'm the <i>CSS</i> to your <i>HTML</i></h3>
-</header>
-<div class="main">
-  <section id="about">
-    <div id="about-picture">
-      <img src="https://images.unsplash.com/photo-1542914119-031b7a0dbb8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" 
-      alt="headshot" id="profile-pic">
-    </div>
-    <div id="about-content">
-      <h2>Me Myself</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores provident, necessitatibus deleniti magni iusto quidem molestiae reiciendis sed quasi corporis perferendis quae rerum ipsum tenetur exercitationem, nam distinctio. Quos, nisi.</p>
-    </div>
-  </section>
-</div>
-  
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <header id="title">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <a class="navbar-brand" href="#">In Memorium</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a href="#tributes" class="nav-link">Tributes</a></li>
+            <li class="nav-item"><a href="#memories" class="nav-link">Memories</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact The Family</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-md-6" id="header-text">
+          <h1>
+            Hana Emily Anchorhouse <br>
+            1950 - 2020
+          </h1>
+          <h3>
+            Beloved wife, mother and friend. <br>
+            Forever in our hearts
+          </h3>
+        </div>
+        <div class="col-md-6">
+          <img id="profile-image"
+            src="https://images.unsplash.com/photo-1543933573-1e0a7578328f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=696&q=80"
+            alt="smiling face">
+        </div>
+      </div>
+    </header>
+
+    <section id="tributes">
+      <div class="row">
+        <div class="col section-description">
+          <h2>Tributes</h2>
+          <div class="divider-1"><span></span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="tribute col-lg-3 col-md-4">
+          <h3 class="bio-topic">To my lovely wife</h3>
+          <p class="bio-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, quos. Hic ut quos architecto nesciunt
+            similique labore ducimus! Placeat excepturi maiores enim modi, animi facilis molestiae. Ab alias doloremque
+            cum!
+          </p>
+          <sup class="bio-author">John Steven Anchorhouse</sup>
+        </div>
+        <div class="tribute col-lg-3 col-md-4">
+          <h3 class="bio-topic">To mum</h3>
+          <p class="bio-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, quos. Hic ut quos architecto nesciunt
+            similique labore ducimus!
+          </p>
+          <sup class="bio-author">Peter Anchorhouse, son</sup>
+          <p class="bio-content">
+            Placeat excepturi maiores enim modi, animi facilis molestiae. Ab alias doloremque cum!
+          </p>
+          <sup class="bio-author">Cynthia Anchorhouse, daughter</sup>
+        </div>
+        <div class="tribute col-lg-3 col-md-4">
+          <h3 class="bio-topic">To our sister</h3>
+          <p class="bio-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, quos. Hic ut quos architecto nesciunt
+            similique labore ducimus! Placeat excepturi maiores enim modi, animi facilis molestiae. Ab alias doloremque
+            cum!
+          </p>
+          <sup class="bio-author">Laury Phillips &amp; Michael Griffin</sup>
+        </div>
+        <div class="tribute col-lg-3 col-md-4">
+          <h3 class="bio-topic">To best friend & business partner</h3>
+          <p class="bio-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, quos. Hic ut quos architecto nesciunt
+            similique labore ducimus! Placeat excepturi maiores enim modi, animi facilis molestiae. Ab alias doloremque
+            cum!
+          </p>
+          <sup class="bio-author">Dana Halm - Joy Hill LLC</sup>
+        </div>
+      </div>
+    </section>
+
+    <section id="memories">
+      <div class="row">
+        <div class="col section-description">
+          <h2>Memories</h2>
+          <div class="divider-1"><span></span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="memory col-lg-4">
+          <div class="story-head">
+            <img class="headshot"
+              src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+              alt="headshot" width="100px">
+            <h3>Harper Lee</h3>
+          </div>
+          <p class="story-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, quos. Hic ut quos architecto nesciunt
+            similique labore ducimus! Placeat excepturi maiores enim modi, animi facilis molestiae. Ab alias doloremque
+            cum!
+          </p>
+        </div>
+        <div class="memory col-lg-4">
+          <div class="story-head">
+            <img class="headshot"
+              src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=941&q=80"
+              alt="headshot" width="100px" height="100px">
+            <h3>Susan Price</h3>
+          </div>
+          <p class="story-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, quos. Hic ut quos architecto nesciunt
+            similique labore ducimus! Placeat excepturi maiores enim modi, animi facilis molestiae. Ab alias doloremque
+            cum!
+          </p>
+        </div>
+        <div class="memory col-lg-4">
+          <div class="story-head">
+            <img class="headshot"
+              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+              alt="headshot" width="100px">
+            <h3>Cody Forest</h3>
+          </div>
+          <p class="story-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, quos. Hic ut quos architecto nesciunt
+            similique labore ducimus! Placeat excepturi maiores enim modi, animi facilis molestiae. Ab alias doloremque
+            cum!
+          </p>
+        </div>
+        <div class="memory col-lg-4">
+          <div class="story-head">
+            <img class="headshot"
+              src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+              alt="headshot" width="100px">
+            <h3>Shantay Bueford</h3>
+          </div>
+          <p class="story-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, quos. Hic ut quos architecto nesciunt
+            similique labore ducimus! Placeat excepturi maiores enim modi, animi facilis molestiae. Ab alias doloremque
+            cum!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="row">
+        <div class="col section-description">
+          <h2>Reach out to the family</h2>
+          <div class="divider-1"><span></span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col contact-details">
+          <p><i class="fas fa-map-marker-alt"></i> 123 Fair Way Avenue, Inidianapolis IN 49023</p>
+          <p><i class="fas fa-phone"></i> Phone: (+1) 317 00 00 001</p>
+          <p><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@domain.com">hello@domain.com</a></p>
+          <p><i class="fab fa-skype"></i> Skype: you_online</p>
+        </div>
+        <div class="col"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
 </body>
+
 </html>
